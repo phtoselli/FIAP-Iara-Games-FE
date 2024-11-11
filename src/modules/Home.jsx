@@ -1,6 +1,6 @@
-// import { message } from "antd";
-// import { useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
+import { message } from "antd";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Button, Col, Flex, Image, Row } from "antd";
 import Paragraph from "antd/es/typography/Paragraph";
@@ -24,17 +24,17 @@ import g5 from '../assets/g5.png';
 import g6 from '../assets/g6.png';
 
 export default function Home() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const user = localStorage.getItem('user');
+  useEffect(() => {
+    const user = localStorage.getItem('user');
 
-  //   message.destroy();
-  //   if (!user?.token) {
-  //     message.warning('Você precisa fazer login para visualizar esta página.');
-  //     navigate('/login');
-  //   }
-  // }, [navigate]);
+    message.destroy();
+    if (!user?.token) {
+      message.warning('Você precisa fazer login para visualizar esta página.');
+      navigate('/login');
+    }
+  }, [navigate]);
 
   return (
     <Flex vertical="vertical" align="center" justify="center" style={{width: '100vw'}}>
