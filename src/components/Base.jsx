@@ -13,7 +13,7 @@ export default function Base({children}) {
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center right'
     }}>
-      <div style={{width: '800px'}}>
+      <div style={{width: '800px', maxWidth: '800px'}}>
         <Row style={{width: '100%'}}>
           <Col span={12} style={{padding: '24px'}}>
             <Flex align="center" justify="center" style={{width: '100%', height: '100%'}}>
