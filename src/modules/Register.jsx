@@ -1,11 +1,10 @@
 import { Button, Divider, Flex, Form, Input, message } from "antd";
 import { useForm } from "antd/es/form/Form";
-import Link from "antd/es/typography/Link";
 import Paragraph from "antd/es/typography/Paragraph";
 import Text from "antd/es/typography/Text";
 import Title from "antd/es/typography/Title";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Base from "../components/Base";
 
 export default function Register() {
@@ -73,7 +72,7 @@ export default function Register() {
       </Form>
 
         <Divider style={{color: '#FFFFFF50', borderColor: '#FFFFFF50'}}>ou</Divider>
-        <Paragraph style={{color: '#FFFFFFBB', alignSelf: 'center'}}>Já possui uma conta? <Link href="/login">Fazer login</Link></Paragraph>
+        <Paragraph style={{color: '#FFFFFFBB', alignSelf: 'center'}}>Já possui uma conta? <Link to="/login">Fazer login</Link></Paragraph>
       </Flex>
     </Base>
   )
